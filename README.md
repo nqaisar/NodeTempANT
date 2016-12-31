@@ -7,35 +7,30 @@ The idea is based upon storing the <a href="www.thisisant.com">ANT+ sensor</a>da
 
 #Dependencies
 <ol>
-  <li><a href="http://socket.io">Socket.IO </a> (based upon WebSockets)</li>
   <li><a href="http://mongoosejs.com">Mongoose ORM </a></li>
   <li>MongoDB</li>
   <li>Node.js</li>
+  <li><a href="http://socket.io">Socket.IO </a> (based upon WebSockets)</li>
+  <ul><li>"homepage": "http://socketio4net.codeplex.com/",</li></ul>
 </ol>
-
 
 
 #Package.json
 {
-  "name": "SocketIO4Net-Test-Server",
-  "author": "J. Stott",
-  "version": "0.0.3",
-  "description": "Simple server to demonstrate SocketIO4Net.Client connectivity",
-  "homepage": "http://socketio4net.codeplex.com/",
-  "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.14.1",
-    "debug": "~0.7.2",
-    "email-validator": "~0.1.2",
-    "express": "~3.4.4",
-    "express-mongoose": "^0.1.0",
-    "moment": "^2.10.6",
-    "mongoose": "^4.2.10",
-    "socket.io": "~0.9.16",
-    "socket.io-wildcard": "~0.1.1"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.6.4"
+  "main": "server.js",<br>
+  "dependencies": {<br>
+    "body-parser": "^1.14.1",<br>
+    "debug": "~0.7.2",<br>
+    "email-validator": "~0.1.2",<br>
+    "express": "~3.4.4",<br>
+    "express-mongoose": "^0.1.0",<br>
+    "moment": "^2.10.6",<br>
+    "mongoose": "^4.2.10",<br>
+    "socket.io": "~0.9.16",<br>
+    "socket.io-wildcard": "~0.1.1"<br>
+  },<br>
+  "devDependencies": {<br>
+    "grunt": "~0.4.1",<br>
+    "grunt-contrib-jshint": "~0.6.4"<br>
   }
 }
