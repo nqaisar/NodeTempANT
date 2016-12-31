@@ -11,7 +11,6 @@ The idea is based upon storing the <a href="www.thisisant.com">ANT+ sensor</a>da
   <li>MongoDB</li>
   <li>Node.js</li>
   <li><a href="http://socket.io">Socket.IO </a> (based upon WebSockets)</li>
-  <ul><li>"homepage": "http://socketio4net.codeplex.com/",</li></ul>
 </ol>
 
 
