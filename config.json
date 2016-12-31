@@ -1,0 +1,35 @@
+{
+   "confmongo": {
+        "mongodser": "mongodb://localhost:",
+        "port": "27017",
+        "mongodb": "/healthcare"
+    },
+    "web": {
+        "hostserver": "http://localhost:",
+        "port": "3002"
+    },
+    "io": {
+        "enable": [
+            "browser client minification",
+            "browser client etag",
+            "browser client gzip"
+        ],
+        "set": [
+            {
+                "key": "log level",
+                "value": "1"
+            },
+            {
+                "key": "transports",
+                "value": [
+                    "websockets",
+                    "xhr-polling",
+					"htmlfile"
+                ]
+            }
+        ]
+    },
+    "clientConfiguration": {
+        "baseRemoteApiUrl": "http://localhost:3002"
+    }
+}
