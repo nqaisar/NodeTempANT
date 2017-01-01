@@ -34,9 +34,6 @@ The idea is based upon storing the <a href="www.thisisant.com">ANT+ sensor</a>da
   }
 }
 
-#How to Run
-
-
 #.Net Client send JSON messages with events
 
 Console.WriteLine("Starting SocketIO4Net Client Events...");<br>
