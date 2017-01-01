@@ -60,6 +60,7 @@ SocketClient.On("connect", (fn) =><br>
                    SocketClient.Emit("register", User.ToJsonString());<br>
                 });<br>
                 
-#For Heart Rate Per-Hour Schema Messages
-SocketClient.Emit("heartbeatMin", hrmobj.ToJsonString());<br>
+#Client emits Heart Rate Messages as
+For per Hour: SocketClient.Emit("heartbeatHr", hrmobj.ToJsonString());<br>
+For per-Minute: SocketClient.Emit("heartbeatMin", hrmobj.ToJsonString());<br>
 where hrmobj is the HRM object containing ANT+ sensor's heart rate data.<br>
