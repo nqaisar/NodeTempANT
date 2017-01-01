@@ -33,3 +33,29 @@ The idea is based upon storing the <a href="www.thisisant.com">ANT+ sensor</a>da
     "grunt-contrib-jshint": "~0.6.4"<br>
   }
 }
+
+#How to Run
+
+
+#.Net Client Configurations to send JSON messages with events
+
+Console.WriteLine("Starting SocketIO4Net Client Events...");<br>
+// url to the nodejs / socket.io instance<br>
+url = "http://localhost:3002";<br>
+SocketClient = new Client(url);<br>
+SocketClient.Opened += SocketOpened;<br>
+SocketClient.Message += SocketMessage;<br>
+SocketClient.SocketConnectionClosed += SocketConnectionClosed;<br>
+SocketClient.Error += SocketError;<br>
+//register for 'connect' event with io server<br>
+SocketClient.On("connect", (fn) =><br>
+               {   Patient User = new Patient
+                    {             
+                    EmailID   = "Ben@oicts.com",
+                    FirstName = "Benjamen",
+                    LastName  = "Claren",
+                    Age       = 65,
+                    Weight    = 75 
+                    };<br>
+                   SocketClient.Emit("register", User.ToJsonString());<br>
+                });<br>
